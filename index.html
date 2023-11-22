@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+   <title> SSS RFID</title>
+   <meta name="description" content="">
+   <meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+   <!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+   <link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+   <!-- Script
+   ================================================== -->
+   <script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+   <link rel="shortcut icon" href="favicon.png">
+
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#testimonials">About</a></li>
+            <li><a class="smoothscroll" href="#resume">Admin</a></li>
+            <li><a class="smoothscroll" href="#users">Users</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h3 class="responsive-headline"><br>Sekolah Agama KAFA Integrasi Al-Mustaqimah</br></h3>
+            <h3>School Security System Using RFID.</h3>
+            <hr />
+            <ul class="social">
+               <li><a
+                     href="https://www.facebook.com/pages/Sekolah%20Agama%20KAFA%20Integrasi%20Al-Mustaqimah/233802153380364/"><i
+                        class="fa fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+               <li><a
+                     href="https://www.google.com/maps/search/sekolah+agama+kafa+al+,mustaqimah/@3.1118382,101.7121447,14z/data=!3m1!4b1?entry=ttu"><i
+                        class="fa fa-google-plus"></i></a></li>
+               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+               <li><a
+                     href="https://www.instagram.com/explore/locations/475712628/sekolah-agama-kafa-integrasi-al-mustaqimah/"><i
+                        class="fa fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+               <li><a href="#"><i class="fa fa-skype"></i></a></li>
+            </ul>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+      <!DOCTYPE html>
+      <html>
+
+      <head>
+         <title>Log In</title>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="icon" type="image/png" href="images/favicon.png">
+         <link rel="stylesheet" type="text/css" href="css/login.css">
+         <script src="js/jquery-2.2.3.min.js"></script>
+         <script>
+            $(window).on("load resize ", function () {
+               var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+               $('.tbl-header').css({ 'padding-right': scrollWidth });
+            }).resize();
+         </script>
+         <script type="text/javascript">
+            $(document).ready(function () {
+               $(document).on('click', '.message', function () {
+                  $('form').animate({ height: "toggle", opacity: "toggle" }, "slow");
+                  $('h1').animate({ height: "toggle", opacity: "toggle" }, "slow");
+               });
+            });
+         </script>
+      </head>
+
+      <body>
+
+         <main>
+            <h1 class="slideInDown animated">Admin </h1>
+            <h1 class="slideInDown animated" id="reset">Please, Enter your Email to send the reset password link</h1>
+            <!-- Log In -->
+            <section>
+               <div class="slideInDown animated">
+                  <div class="login-page">
+                     <div class="form">
+
+                        <div class="alert1"></div>
+                        <form class="reset-form" action="reset_pass.php" method="post" enctype="multipart/form-data">
+                           <input type="email" name="email" placeholder="E-mail..." required />
+                           <button type="submit" name="reset_pass">Reset</button>
+                           <p class="message"><a href="#">login.php</a></p>
+                        </form>
+                        <form class="login-form" action="ac_login.php" method="post" enctype="multipart/form-data">
+                           <input type="email" name="email" id="email" placeholder="E-mail..." required />
+                           <input type="password" name="pwd" id="pwd" placeholder="password" required />
+                           <button type="submit" name="login" id="login">login</button>
+                           <p class="message">Forgot your Password? <a href="#">Reset your password</a></p>
+
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="users">
+               <div class="users">
+
+                  <body>
+                     <main>
+                        <h1 class="slideInDown animated">Users </h1>
+                        <h1 class="slideInDown animated" id="reset">Please, Enter your Email to send the reset password
+                           link</h1>
+
+                        <section>
+                           <div class="slideInDown animated">
+                              <div class="login_users-page">
+                                 <div class="form">
+
+                                    <div class="alert1"></div>
+                                    <form class="reset-form" action="reset_pass.php" method="post"
+                                       enctype="multipart/form-data">
+                                       <input type="email" name="email" placeholder="E-mail..." required />
+                                       <button type="submit" name="reset_pass">Reset</button>
+                                       <p class="message"><a href="#">login_users.php</a></p>
+                                    </form>
+                                    <form class="login-form" action="ac_login_users.php" method="post"
+                                       enctype="multipart/form-data">
+                                       <input type="email" name="email" id="email" placeholder="E-mail..." required />
+                                       <input type="password" name="pwd" id="pwd" placeholder="password" required />
+                                       <button type="submit" name="login" id="login">login</button>
+                                       <p class="message">Forgot your Password? <a href="#">Reset your password</a></p>
+                                       <p class="message">New accouont? <a href="register.php">Create an Account</a></p>
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                        </section>
+                     </main>
+         </main>
+      </body>
+
+      </html>
+
+
+
+      <!-- <script src="js/validations.js"></script> -->
+</body>
+<br></br>
+
+<!-- Testimonials Section
+   ================================================== -->
+<section id="testimonials">
+
+   <div class="text-container">
+
+      <div class="row">
+
+         <div class="two columns header-col">
+
+            <h1><span>Client Testimonials</span></h1>
+
+         </div>
+
+         <div class="ten columns flex-container">
+
+            <div class="flexslider">
+
+               <ul class="slides">
+
+                  <li>
+                     <blockquote>
+                        <p>"Beware of Satan, for the safety of your religion. He has lost all hope that he will be able
+                           to lead you astray in big things so beware of following him in small things."
+                        </p>
+                        <cite></cite>
+                     </blockquote>
+                  </li> <!-- slide ends -->
+
+                  <li>
+                     <blockquote>
+                        <p>"Allah has forbidden you to take usury, therefore all interest obligation shall henceforth be
+                           waived. Your capital is yours to keep .You will neither inflict nor suffer any inequality.
+                           Allah has judged that there shall be no interest and that all interest due to Abbas Ibn
+                           'Aal-Muttalib be waived."
+                        </p>
+                        <cite></cite>
+                     </blockquote>
+                  </li> <!-- slide ends -->
+
+               </ul>
+
+            </div> <!-- div.flexslider ends -->
+
+         </div> <!-- div.flex-container ends -->
+
+      </div> <!-- row ends -->
+
+   </div> <!-- text-container ends -->
+
+</section> <!-- Testimonials Section End-->
+
+
+<!-- Contact Section
+   ================================================== -->
+<section id="contact">
+   <div class="row section-head">
+      <div class="two columns header-col">
+         <h1><span>Get In Touch.</span></h1>
+      </div>
+      <div class="ten columns">
+
+         <p class="lead">Sekolah Agama Kelas Al-Quran & Fardhu Ain (Kafa) Integrasi Al-Mustaqimah.
+         </p>
+         <p>Melahirkan Modal Insan Teknokrat Agama (Mutadayyin)</p>
+      </div>
+   </div>
+   <div class="row">
+      <div class="eight columns">
+         <!-- form -->
+         <form action="" method="post" id="contactForm" name="contactForm">
+            <fieldset>
+               <div>
+                  <label for="contactName">Name <span class="required">*</span></label>
+                  <input type="text" value="" size="35" id="contactName" name="contactName">
+               </div>
+
+               <div>
+                  <label for="contactEmail">Email <span class="required">*</span></label>
+                  <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+               </div>
+
+               <div>
+                  <label for="contactSubject">Subject</label>
+                  <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+               </div>
+
+               <div>
+                  <label for="contactMessage">Message <span class="required">*</span></label>
+                  <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+               </div>
+
+               <div>
+                  <button class="submit">Submit</button>
+                  <span id="image-loader">
+                     <img alt="" src="images/loader.gif">
+                  </span>
+               </div>
+
+            </fieldset>
+         </form> <!-- Form End -->
+
+         <!-- contact-warning -->
+         <div id="message-warning"> Error boy</div>
+         <!-- contact-success -->
+         <div id="message-success">
+            <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+         </div>
+
+      </div>
+
+
+      <aside class="four columns footer-widgets">
+
+         <div class="widget widget_contact">
+
+            <h4>Address and Phone</h4>
+            <p class="address">
+               Abdul Malik<br>
+               Sekolah Agama Kelas Al-Quran & Fardhu Ain (Kafa) Integrasi Al-Mustaqimah, <br>
+               Jalan Indah 13, Taman Cheras Indah, 56100 Kuala Lumpur, Selangor<br>
+               <span>+03-9281 6711</span>
+            </p>
+         </div>
+      </aside>
+   </div>
+</section> <!-- Contact Section End-->
+
+
+<!-- footer
+   ================================================== -->
+<footer>
+
+   <div class="row">
+
+      <div class="twelve columns">
+
+         <ul class="social-links">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a href="#"><i class="fa fa-skype"></i></a></li>
+         </ul>
+
+         <ul class="copyright">
+            <li>SSS RFID
+         </ul>
+
+      </div>
+
+      <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+   </div>
+
+</footer> <!-- Footer End-->
+
+<!-- Java Script
+   ================================================== -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/waypoints.js"></script>
+<script src="js/jquery.fittext.js"></script>
+<script src="js/magnific-popup.js"></script>
+<script src="js/init.js"></script>
+
+</body>
+
+</html>
